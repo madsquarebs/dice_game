@@ -24,3 +24,4 @@ class Game:
             return "Player2 is the winner!"
         else:
             return "The game was a draw"
+        logger.info("for conflict")
