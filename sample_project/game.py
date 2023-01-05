@@ -21,15 +21,12 @@ class Game:
 
         logger.info(f"{self.player1.get_name()}\'s total dice value is {self.player1.get_score()}")
         logger.info("***********************************")
-        logger.info("***********************************")
-
         logger.info(f"{self.player2.get_name()}\'s total dice value is {self.player2.get_score()}")
         logger.info("***********************************")
-        logger.info("***********************************")
-
         if self.player1.get_score() > self.player2.get_score():
             return "Player1 is the winner!"
         elif self.player2.get_score() > self.player1.get_score():
             return "Player2 is the winner!"
         else:
             return "The game was a draw"
+        logger.info("for conflict")
